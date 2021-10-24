@@ -13,7 +13,7 @@
 						<span>
 							<a href="#">이용약관</a>
 						</span>
-						<span>
+						<span> 
 							<a href="#">개인정보처리방침</a>
 						</span>
 						<span>
