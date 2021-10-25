@@ -11,6 +11,18 @@ public class Test {
 		System.out.println("hi 가희"); 
 		System.out.println("아아아아아아아아ㅏㅇ아ㅏㅇ아");
 		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
 	}
 
 }
