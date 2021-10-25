@@ -20,5 +20,6 @@ public class Test {
 		System.out.println("hi 가희");
 		System.out.println("hi 가희"); 
 		System.out.println("hi 가희");
+		System.out.println("이지희");
 	}
 }
