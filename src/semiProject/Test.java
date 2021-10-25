@@ -9,7 +9,6 @@ public class Test {
 		System.out.println("hi 가희"); 
 		System.out.println("hi 가희"); 
 		System.out.println("hi 유가"); 
-
 		System.out.println("hi 온화");
 		System.out.println("hi 온화");
 		System.out.println("hi 가희"); 
@@ -35,8 +34,13 @@ public class Test {
 		System.out.println("hi 유2가2"); 
 
 		System.out.println("현");
-		
 
 		System.out.println("hi 희"); 
+		System.out.println("hi 희"); 
+		System.out.println("난가희");
+		System.out.println("난가희");
+		System.out.println("난가희");
+		
+
 	}
 }
