@@ -6,6 +6,9 @@ public class Test {
 		System.out.println("hi 가희"); 
 		System.out.println("hi 유가"); 
 		System.out.println("hi 온화");
+		System.out.println("hi 유가"); 
+		System.out.println("hi 온화");
+		System.out.println("hi 온화");
 	}
 
 }
