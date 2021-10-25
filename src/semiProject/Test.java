@@ -3,8 +3,11 @@ package semiProject;
 public class Test {
 	
 	public static void main(String[] args) {
+
+		System.out.println("hi 가희"); 
 		System.out.println("hi 가희"); 
 		System.out.println("hi 유가"); 
+
 		System.out.println("hi 온화");
 		System.out.println("hi 온화");
 		System.out.println("hi 가희"); 
@@ -22,5 +25,12 @@ public class Test {
 		System.out.println("hi 가희");
 		System.out.println("이지희");
 		System.out.println("왜 됐다가 안 됐다가 해ㅠㅠㅠㅠㅠㅠㅠ 짜증");
+
+		System.out.println("hi 유가2222"); 
+
+		System.out.println("hi 가2희"); 
+		System.out.println("hi 가2희2"); 
+		System.out.println("hi 유2가2"); 
+
 	}
 }
