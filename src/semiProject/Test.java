@@ -12,6 +12,15 @@ public class Test {
 		System.out.println("hi 가희");
 		System.out.println("어려워요_나현");
 		System.out.println("git.._나현");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
+
 	}
 
 }
