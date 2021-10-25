@@ -10,6 +10,9 @@ public class Test {
 		System.out.println("hi 가희"); 
 		System.out.println("hi 가희"); 
 		System.out.println("hi 가희");
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희"); 
+		System.out.println("hi 가희");
 	}
 
 }
