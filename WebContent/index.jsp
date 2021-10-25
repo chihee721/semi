@@ -89,7 +89,7 @@
                                     <p class="item_title">숙소제목</p>
                                 </div>
                             </a>
-                        </li>
+                        </li> 
                         <li>
                             <a href='#'>
                                 <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
