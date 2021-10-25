@@ -21,5 +21,6 @@ public class Test {
 		System.out.println("hi 가희"); 
 		System.out.println("hi 가희");
 		System.out.println("이지희");
+		System.out.println("왜 됐다가 안 됐다가 해ㅠㅠㅠㅠㅠㅠㅠ 짜증");
 	}
 }
