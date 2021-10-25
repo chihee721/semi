@@ -41,6 +41,9 @@ public class Test {
 		System.out.println("난가희");
 		System.out.println("난가희");
 		
+		System.out.println("현정");
+		
+		
 
 	}
 }
