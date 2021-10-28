@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -20,8 +21,21 @@
     <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/main.css">
     <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/contents.css">
     <script type="text/javascript" src="/semiProject/resources/js/contents.js"></script>
+    
+<%-- session에 담긴 message 있을 경우 alert 하는 script --%>
+<% if(session.getAttribute("message") != null) {%>
+<script>
+	alert('<%= session.getAttribute("message") %>');
+</script>
+<% 
+		session.removeAttribute("message");  //계속 alert 뜨는거 방지하기 위해 한번 띄우면 지우기
+	} 
+%>
 </head>
 <body>
+<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }"
+scope="application"/>
+
 	<div id="wrap">
 		<header id="header">
 			<div class="inner">					
