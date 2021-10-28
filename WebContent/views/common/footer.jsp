@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<footer id="footer">
+		<footer id="footer">
 			<div class="inner">
 				<div class="fLogo">
 					<img src="/semiProject/resources/images/flogo.png" alt="">
