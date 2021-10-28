@@ -1,4 +1,4 @@
-package payment;
+package payment.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
