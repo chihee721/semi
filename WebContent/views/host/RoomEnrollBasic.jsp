@@ -35,7 +35,7 @@
 				<!-- 등록 내용 화면 -->
 				<div class="roomenroll_basic">
 					<!-- ** 기본설정 1 ** -->
-					<form method="post" action="" name="roomeenrollbasic">
+					<form method="post" action="${ contextPath }/host/roomenrollbasic" name="roomeenrollbasic"> 
 						<div class="roomenroll_title_main">
 							<h2>설명</h2><span>숙소를 소개해주세요.</span>
 						</div>
@@ -58,13 +58,13 @@
 								<p>숙소 제목</p><span>※ 숙소의 특징이 잘 나타날 수 있게 표현해주세요. ex)아름다운 제주바다가 눈 앞에</span>
 							</div>
 							<div class="inp_text roomenroll_inp">
-								<input type="text" name="" id="" / required>
+								<input type="text" name="roomtitle" id="roomtitle" required>
 							</div>
 							<div class="roomenroll_title">
 								<p>숙소 소개</p>
 							</div>
 							<div class="textbox roomenroll_introduce">
-								<textarea placeholder="숙소를 소개하는 내용을 작성해주세요."></textarea>
+								<textarea name="roomdes" placeholder="숙소를 소개하는 내용을 작성해주세요."></textarea>
 							</div>
 						</div>
 						<!-- ** 기본설정 2 ** -->
@@ -84,32 +84,48 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt0" name="roomcnt" />
+												<input type="radio" value="0" class="option" id="roomcnt0" name="room" />
 												<label for="roomcnt0">0</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt1" name="roomcnt" />
+												<input type="radio" value="1" class="option" id="roomcnt1" name="room" />
 												<label for="roomcnt1">1</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt2" name="roomcnt" />
+												<input type="radio" value="2" class="option" id="roomcnt2" name="room" />
 												<label for="roomcnt2">2</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt3" name="roomcnt">
+												<input type="radio" value="3" class="option" id="roomcnt3" name="room">
 												<label for="roomcnt3">3</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt4" name="roomcnt">
+												<input type="radio" value="4" class="option" id="roomcnt4" name="room">
 												<label for="roomcnt4">4</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt5" name="roomcnt">
+												<input type="radio" value="5" class="option" id="roomcnt5" name="room">
 												<label for="roomcnt5">5</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="roomcnt6" name="roomcnt">
-												<label for="roomcnt6">6+</label>
+												<input type="radio" value="6" class="option" id="roomcnt6" name="room">
+												<label for="roomcnt6">6</label>
+											</li>
+											<li>
+												<input type="radio" value="7" class="option" id="roomcnt7" name="room">
+												<label for="roomcnt7">7</label>
+											</li>
+											<li>
+												<input type="radio" value="8" class="option" id="roomcnt8" name="room">
+												<label for="roomcnt8">8</label>
+											</li>
+											<li>
+												<input type="radio" value="9" class="option" id="roomcnt9" name="room">
+												<label for="roomcnt9">9</label>
+											</li>
+											<li>
+												<input type="radio" value="10" class="option" id="roomcnt10" name="room">
+												<label for="roomcnt10">10</label>
 											</li>
 										</ul>
 									</div>
@@ -122,32 +138,48 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt0" name="bedcnt" />
+												<input type="radio" value="0" class="option" id="bedcnt0" name="bed" />
 												<label for="bedcnt0">0</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt1" name="bedcnt" />
+												<input type="radio" value="1" class="option" id="bedcnt1" name="bed" />
 												<label for="bedcnt1">1</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt2" name="bedcnt" />
+												<input type="radio" value="2" class="option" id="bedcnt2" name="bed" />
 												<label for="bedcnt2">2</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt3" name="bedcnt">
+												<input type="radio" value="3" class="option" id="bedcnt3" name="bed">
 												<label for="bedcnt3">3</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt4" name="bedcnt">
+												<input type="radio" value="4" class="option" id="bedcnt4" name="bed">
 												<label for="bedcnt4">4</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt5" name="bedcnt">
+												<input type="radio" value="5" class="option" id="bedcnt5" name="bed">
 												<label for="bedcnt5">5</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bedcnt6" name="bedcnt">
-												<label for="bedcnt6">6+</label>
+												<input type="radio" value="6" class="option" id="bedcnt6" name="bed">
+												<label for="bedcnt6">6</label>
+											</li>
+											<li>
+												<input type="radio" value="7" class="option" id="bedcnt7" name="bed">
+												<label for="bedcnt7">7</label>
+											</li>
+											<li>
+												<input type="radio" value="8" class="option" id="bedcnt8" name="bed">
+												<label for="bedcnt8">8</label>
+											</li>
+											<li>
+												<input type="radio" value="9" class="option" id="bedcnt9" name="bed">
+												<label for="bedcnt9">9</label>
+											</li>
+											<li>
+												<input type="radio" value="10" class="option" id="bedcnt10" name="bed">
+												<label for="bedcnt10">10</label>
 											</li>
 										</ul>
 									</div>
@@ -160,28 +192,28 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt0" name="bathroomcnt" />
+												<input type="radio" value="0" class="option" id="bathroomcnt0" name="bath" />
 												<label for="bathroomcnt0">0</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt1" name="bathroomcnt" />
+												<input type="radio" value="1" class="option" id="bathroomcnt1" name="bath" />
 												<label for="bathroomcnt1">1</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt2" name="bathroomcnt" />
+												<input type="radio" value="2" class="option" id="bathroomcnt2" name="bath" />
 												<label for="bathroomcnt2">2</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt3" name="bathroomcnt">
+												<input type="radio" value="3" class="option" id="bathroomcnt3" name="bath">
 												<label for="bathroomcnt3">3</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt4" name="bathroomcnt">
+												<input type="radio" value="4" class="option" id="bathroomcnt4" name="bath">
 												<label for="bathroomcnt4">4</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="bathroomcnt5" name="bathroomcnt">
-												<label for="bathroomcnt5">5+</label>
+												<input type="radio" value="5" class="option" id="bathroomcnt5" name="bath">
+												<label for="bathroomcnt5">5</label>
 											</li>
 										</ul>
 									</div>
@@ -200,20 +232,20 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="sel1_1" name="roomsort" />
-												<label for="sel1_1">원룸</label>
+												<input type="radio" value="원룸" class="option" id="roomtype1" name="roomtype" />
+												<label for="roomtype1">원룸</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_2" name="roomsort" />
-												<label for="sel1_2">투룸</label>
+												<input type="radio" value="투룸" class="option" id="roomtype2" name="roomtype" />
+												<label for="roomtype2">투룸</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_3" name="roomsort" />
-												<label for="sel1_3">쓰리룸 이상</label>
+												<input type="radio" value="쓰리룸이상" class="option" id="roomtype3" name="roomtype" />
+												<label for="roomtype3">쓰리룸 이상</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_4" name="roomsort">
-												<label for="sel1_4">복층</label>
+												<input type="radio" value="복층" class="option" id="roomtype4" name="roomtype">
+												<label for="roomtype4">복층</label>
 											</li>
 										</ul>
 									</div>
@@ -226,28 +258,28 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="sel1_1" name="buildingsort" />
-												<label for="sel1_1">원룸</label>
+												<input type="radio" value="원룸" class="option" id="buildingtype1" name="buildingtype" />
+												<label for="buildingtype1">원룸</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_2" name="buildingsort" />
-												<label for="sel1_2">빌라</label>
+												<input type="radio" value="빌라" class="option" id="buildingtype2" name="buildingtype" />
+												<label for="buildingtype2">빌라</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_3" name="buildingsort" />
-												<label for="sel1_3">펜션</label>
+												<input type="radio" value="펜션" class="option" id="buildingtype3" name="buildingtype" />
+												<label for="buildingtype3">펜션</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_4" name="buildingsort">
-												<label for="sel1_4">오피스텔</label>
+												<input type="radio" value="오피스텔" class="option" id="buildingtype4" name="buildingtype">
+												<label for="buildingtype4">오피스텔</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_5" name="buildingsort">
-												<label for="sel1_5">단독주택</label>
+												<input type="radio" value="단독주택" class="option" id="buildingtype5" name="buildingtype">
+												<label for="buildingtype5">단독주택</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_6" name="buildingsort">
-												<label for="sel1_6">쉐어하우스</label>
+												<input type="radio" value="쉐어하우스" class="option" id="buildingtype6" name="buildingtype">
+												<label for="buildingtype6">쉐어하우스</label>
 											</li>
 										</ul>
 									</div>
@@ -260,44 +292,44 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="sel1_1" name="roonsize" />
-												<label for="sel1_1">모름</label>
+												<input type="radio" value="모름" class="option" id="roomsize1" name="roomsize" />
+												<label for="roomsize1">모름</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_2" name="roonsize" />
-												<label for="sel1_2">5평</label>
+												<input type="radio" value="5평" class="option" id="roomsize2" name="roomsize" />
+												<label for="roomsize2">5평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_3" name="roonsize" />
-												<label for="sel1_3">5~10평</label>
+												<input type="radio" value="5~10평" class="option" id="roomsize3" name="roomsize" />
+												<label for="roomsize3">5~10평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_4" name="roonsize">
-												<label for="sel1_4">10~15평</label>
+												<input type="radio" value="10~15평" class="option" id="roomsize4" name="roomsize">
+												<label for="roomsize4">10~15평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_5" name="roonsize">
-												<label for="sel1_5">15~20평</label>
+												<input type="radio" value="15~20평" class="option" id="roomsize5" name="roomsize">
+												<label for="roomsize5">15~20평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_6" name="roonsize">
-												<label for="sel1_6">20~25평</label>
+												<input type="radio" value="20~25평" class="option" id="roomsize6" name="roomsize">
+												<label for="roomsize6">20~25평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_7" name="roonsize">
-												<label for="sel1_7">25~30평</label>
+												<input type="radio" value="25~30평" class="option" id="roomsize7" name="roomsize">
+												<label for="roomsize7">25~30평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_8" name="roonsize">
-												<label for="sel1_8">30~40평</label>
+												<input type="radio" value="30~40평" class="option" id="roomsize8" name="roomsize">
+												<label for="roomsize8">30~40평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_9" name="roonsize">
-												<label for="sel1_9">40~50평</label>
+												<input type="radio" value="40~50평" class="option" id="roomsize9" name="roomsize">
+												<label for="roomsize9">40~50평</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_10" name="roonsize">
-												<label for="sel1_10">50평 초과</label>
+												<input type="radio" value="50평 초과" class="option" id="roomsize10" name="roomsize">
+												<label for="roomsize10">50평 초과</label>
 											</li>
 										</ul>
 									</div>
@@ -319,56 +351,56 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="sel1_1" name="starttime" />
-												<label for="sel1_1">09:00</label>
+												<input type="radio" value="09:00" class="option" id="starttime1" name="starttime" />
+												<label for="starttime1">09:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_2" name="roomcnt" />
-												<label for="sel1_2">10:00</label>
+												<input type="radio" value="10:00" class="option" id="starttime2" name="starttime" />
+												<label for="starttime2">10:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_3" name="roomcnt" />
-												<label for="sel1_3">11:00</label>
+												<input type="radio" value="11:00" class="option" id="starttime3" name="starttime" />
+												<label for="starttime3">11:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_4" name="roomcnt">
-												<label for="sel1_4">12:00</label>
+												<input type="radio" value="12:00" class="option" id="starttime4" name="starttime">
+												<label for="starttime4">12:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_5" name="roomcnt">
-												<label for="sel1_5">13:00</label>
+												<input type="radio" value="13:00" class="option" id="starttime5" name="starttime">
+												<label for="starttime5">13:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_6" name="roomcnt">
-												<label for="sel1_6">14:00</label>
+												<input type="radio" value="14:00" class="option" id="starttime6" name="starttime">
+												<label for="starttime6">14:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_7" name="roomcnt">
-												<label for="sel1_7">15:00</label>
+												<input type="radio" value="15:00" class="option" id="starttime7" name="starttime">
+												<label for="starttime7">15:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_8" name="roomcnt">
-												<label for="sel1_8">16:00</label>
+												<input type="radio" value="16:00" class="option" id="starttime8" name="starttime">
+												<label for="starttime8">16:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_9" name="roomcnt">
-												<label for="sel1_9">17:00</label>
+												<input type="radio" value="17:00" class="option" id="starttime9" name="starttime">
+												<label for="starttime9">17:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_10" name="roomcnt">
-												<label for="sel1_10">18:00</label>
+												<input type="radio" value="18:00" class="option" id="starttime10" name="starttime">
+												<label for="starttime10">18:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_11" name="roomcnt">
-												<label for="sel1_11">19:00</label>
+												<input type="radio" value="19:00" class="option" id="starttime11" name="starttime">
+												<label for="starttime11">19:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_12" name="roomcnt">
-												<label for="sel1_12">20:00</label>
+												<input type="radio" value="20:00" class="option" id="starttime12" name="starttime">
+												<label for="starttime12">20:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_13" name="roomcnt">
-												<label for="sel1_13">21:00</label>
+												<input type="radio" value="21:00" class="option" id="starttime13" name="starttime">
+												<label for="starttime13">21:00</label>
 											</li>
 										</ul>
 									</div>
@@ -381,56 +413,56 @@
 										<button class="title" type="button" title="검색옵션 선택">선택</button>
 										<ul class="selList">
 											<li>
-												<input type="radio" value="" class="option" id="sel1_1" name="endtime" />
-												<label for="sel1_1">09:00</label>
+												<input type="radio" value="09:00" class="option" id="endtime1" name="endtime" />
+												<label for="endtime1">09:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_2" name="roomcnt" />
-												<label for="sel1_2">10:00</label>
+												<input type="radio" value="10:00" class="option" id="endtime2" name="endtime" />
+												<label for="endtime2">10:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_3" name="roomcnt" />
-												<label for="sel1_3">11:00</label>
+												<input type="radio" value="11:00" class="option" id="endtime3" name="endtime" />
+												<label for="endtime3">11:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_4" name="roomcnt">
-												<label for="sel1_4">12:00</label>
+												<input type="radio" value="12:00" class="option" id="endtime4" name="endtime">
+												<label for="endtime4">12:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_5" name="roomcnt">
-												<label for="sel1_5">13:00</label>
+												<input type="radio" value="13:00" class="option" id="endtime5" name="endtime">
+												<label for="endtime5">13:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_6" name="roomcnt">
-												<label for="sel1_6">14:00</label>
+												<input type="radio" value="14:00" class="option" id="endtime6" name="endtime">
+												<label for="endtime6">14:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_7" name="roomcnt">
-												<label for="sel1_7">15:00</label>
+												<input type="radio" value="15:00" class="option" id="endtime7" name="endtime">
+												<label for="endtime7">15:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_8" name="roomcnt">
-												<label for="sel1_8">16:00</label>
+												<input type="radio" value="16:00" class="option" id="endtime8" name="endtime">
+												<label for="endtime8">16:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_9" name="roomcnt">
-												<label for="sel1_9">17:00</label>
+												<input type="radio" value="17:00" class="option" id="endtime9" name="endtime">
+												<label for="endtime9">17:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_10" name="roomcnt">
-												<label for="sel1_10">18:00</label>
+												<input type="radio" value="18:00" class="option" id="endtime10" name="endtime">
+												<label for="endtime10">18:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_11" name="roomcnt">
-												<label for="sel1_11">19:00</label>
+												<input type="radio" value="19:00" class="option" id="endtime11" name="endtime">
+												<label for="endtime11">19:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_12" name="roomcnt">
-												<label for="sel1_12">20:00</label>
+												<input type="radio" value="20:00" class="option" id="endtime12" name="endtime">
+												<label for="endtime12">20:00</label>
 											</li>
 											<li>
-												<input type="radio" value="" class="option" id="sel1_13" name="roomcnt">
-												<label for="sel1_13">21:00</label>
+												<input type="radio" value="21:00" class="option" id="endtime13" name="endtime">
+												<label for="endtime13">21:00</label>
 											</li>
 										</ul>
 									</div>
@@ -453,68 +485,68 @@
 									<ul>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">TV</label>
+												<input type="checkbox" name="roomfac" id="fac1" value="TV">
+												<label for="fac1">TV</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">에어컨</label>
+												<input type="checkbox" name="roomfac" id="fac2" value="에어컨">
+												<label for="fac2">에어컨</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">와이파이</label>
+												<input type="checkbox" name="roomfac" id="fac3" value="와이파이">
+												<label for="fac3">와이파이</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">전기포트</label>
+												<input type="checkbox" name="roomfac" id="fac4" value="전기포트">
+												<label for="fac4">전기포트</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">전자렌지</label>
+												<input type="checkbox" name="roomfac" id="fac5" value="전자렌지">
+												<label for="fac5">전자렌지</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">밥솥</label>
+												<input type="checkbox" name="roomfac" id="fac6" value="밥솥">
+												<label for="fac6">밥솥</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">수건</label>
+												<input type="checkbox" name="roomfac" id="fac7" value="수건">
+												<label for="fac7">수건</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">식기</label>
+												<input type="checkbox" name="roomfac" id="fac8" value="식기">
+												<label for="fac8">식기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">다리미</label>
+												<input type="checkbox" name="roomfac" id="fac9" value="다리미">
+												<label for="fac9">다리미</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">헤어드라이기</label>
+												<input type="checkbox" name="roomfac" id="fac10" value="헤어드라이기">
+												<label for="fac10">헤어드라이기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">냉장고</label>
+												<input type="checkbox" name="roomfac" id="fac11" value="냉장고">
+												<label for="fac11">냉장고</label>
 											</span>
 										</li>
 									</ul>
@@ -524,44 +556,44 @@
 									<ul>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">욕조</label>
+												<input type="checkbox" name="roomfac" id="fac12" value="욕조">
+												<label for="fac12">욕조</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">세탁기</label>
+												<input type="checkbox" name="roomfac" id="fac13" value="세탁기">
+												<label for="fac13">세탁기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">건조기</label>
+												<input type="checkbox" name="roomfac" id="fac14" value="건조기">
+												<label for="fac14">건조기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">무료 주차</label>
+												<input type="checkbox" name="roomfac" id="fac15" value="무료주차">
+												<label for="fac15">무료주차</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">위생용품</label>
+												<input type="checkbox" name="roomfac" id="fac16" value="위생용품">
+												<label for="fac16">위생용품</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">바비큐</label>
+												<input type="checkbox" name="roomfac" id="fac17" value="바비큐">
+												<label for="fac17">바비큐</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">테라스</label>
+												<input type="checkbox" name="roomfac" id="fac18" value="테라스">
+												<label for="fac18">테라스</label>
 											</span>
 										</li>
 									</ul>
@@ -571,26 +603,26 @@
 									<ul>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">가족/어린이 환영</label>
+												<input type="checkbox" name="roomfac" id="fac19" value="가족/어린이 환영">
+												<label for="fac19">가족/어린이 환영</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">반려동물 입실가능</label>
+												<input type="checkbox" name="roomfac" id="fac20" value="반려동물 입실가능">
+												<label for="fac20">반려동물 입실가능</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">반려동물 입실금지</label>
+												<input type="checkbox" name="roomfac" id="fac21" value="반려동물 입실금지">
+												<label for="fac21">반려동물 입실금지</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">휠체어 사용가능</label>
+												<input type="checkbox" name="roomfac" id="fac22" value="휠체어 사용가능">
+												<label for="fac22">휠체어 사용가능</label>
 											</span>
 										</li>
 									</ul>
@@ -600,26 +632,26 @@
 									<ul>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">화재감지기</label>
+												<input type="checkbox" name="roomfac" id="fac23" value="화재감지기">
+												<label for="fac23">화재감지기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">구급상자</label>
+												<input type="checkbox" name="roomfac" id="fac24" value="구급상자">
+												<label for="fac24">구급상자</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">소화기</label>
+												<input type="checkbox" name="roomfac" id="fac25" value="소화기">
+												<label for="fac25">소화기</label>
 											</span>
 										</li>
 										<li>
 											<span class="inp_check">
-												<input type="checkbox" name="chk1" id="chk1_1">
-												<label for="chk1_1">실내흡연 불가능</label>
+												<input type="checkbox" name="roomfac" id="fac26" value="실내흡연 불가능">
+												<label for="fac26">실내흡연 불가능</label>
 											</span>
 										</li>
 									</ul>
@@ -627,7 +659,7 @@
 							</div>
 						</div>
 						<div class="btn_wrap roomregistbtn2">
-							<a href="#" class="btn btnType1 btnSizeS" type="button" onclick=""><span>다음</span></a>   
+							<a href="#" class="btn btnType1 btnSizeS" type="button" onclick="submit();"><span>다음</span></a>   
 						</div>	
 					</form>
                 </div>
@@ -653,6 +685,14 @@
 			}
 
 		};
+		
+		// 제출하기
+		function submit(){
+			document.forms.roomeenrollbasic.submit();
+		}
 		</script>
 		
 <%@include file="/views/common/footer.jsp" %>
+
+
+

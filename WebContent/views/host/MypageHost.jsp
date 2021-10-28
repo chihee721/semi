@@ -24,7 +24,7 @@
 					</div>
 					<div class="hostpagetab roomtab">
 						<!-- 숙소 리스트 있는 경우 -->
-						<ul>
+						<!-- <ul>
 							<li class="main_roomlist">
 								<a href="#"><img src="../resources/images/host/house.png"></a><br>
 								<h3>푸른바다 제주펜션</h3>
@@ -33,13 +33,13 @@
 								<a href="#"><img src="../resources/images/host/house.png"></a><br>
 								<h3>협재바다 늘푸른가옥</h3>
 							</li>	
-						</ul>
+						</ul> -->
 						
 						<!-- 숙소 리스트 없는 경우 -->
-						<!-- <div class="noData">
+						<div class="noData">
 							<p>등록된 숙소가 없습니다.</p>
-							<a  href="#" class="subtxt"><u>숙소를 간편하게 바로 등록해보세요!</u></a>
-						</div> -->
+							<a href="${ contextPath }/host/roomenrollbasic" class="subtxt"><u>숙소를 간편하게 바로 등록해보세요!</u></a>
+						</div> 
 					</div>
 					<!-- 게스트 후기 탭 클릭 시 -->
 					<div class="hostpagetab reviewtab">
@@ -66,6 +66,11 @@
 								</tbody>
 							</table>
 						</div>
+						<!-- 등록 된 후기 없을 경우 -->
+						<!-- <div class="noData">
+							<p>등록된 후기가 없습니다.</p>
+						</div> -->
+						
 						<!-- 페이징 -->
 						<div class="paging">
 							<span class="first"><a href="#"><span class="blind">첫페이지</span></a></span>
@@ -79,16 +84,12 @@
 							<span class="last"><a href="#"><span class="blind">마지막페이지</span></a></span>
 						</div>
 
-						<!-- 등록 된 후기 없을 경우 -->
-						<!-- <div class="noData">
-							<p>등록된 후기가 없습니다.</p>
-						</div> -->
 					</div>
                 </div>
 			</div>
 		</div>
-<%@include file="/views/common/footer.jsp" %>
 <script>
+	// 탭 변경하기 이벤트
     let roomli = document.querySelector(".roomli");
     let reviewli = document.querySelector(".reviewli");
     let roomtab = document.querySelector(".roomtab");
@@ -113,4 +114,21 @@
             reviewli.classList.toggle("on");
         }
     }
+    
+    // 리뷰 내용 글자수가 30자 초과하면 뒷 내용 생략하기
+    let reviewcont = document.querySelectorAll(".review_content");
+	for(let i = 0; i < reviewcont.length; i++){
+
+		if(reviewcont[i].textContent.length > 30){
+			let reviewchange = reviewcont[i].textContent.substring(0, 30) + "..."; 
+			reviewcont[i].textContent = reviewchange;
+		}
+	}
+	
 </script>
+
+<%@include file="/views/common/footer.jsp" %>
+
+
+
+
