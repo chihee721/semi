@@ -60,47 +60,47 @@
 	    </div>
 	</div><!--sec01 END-->
 	<div class="sec02">
-              <div class="container">
-                  <h2>추천숙소</h2>
-                  <ul class="recommend_list">
-                      <li>
-                          <a href='#'>
-                              <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
-                              <div class="item_info">
-                                  <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
-                                  <p class="item_title">숙소제목</p>
-                              </div>
-                          </a>
-                      </li>
-                      <li>
-                          <a href='#'>
-                              <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
-                              <div class="item_info">
-                                  <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
-                                  <p class="item_title">숙소제목</p>
-                              </div>
-                          </a>
-                      </li>
-                      <li>
-                          <a href='#'>
-                              <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
-                              <div class="item_info">
-                                  <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
-                                  <p class="item_title">숙소제목</p>
-                              </div>
-                          </a>
-                      </li> 
-                      <li>
-                          <a href='#'>
-                              <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
-                              <div class="item_info">
-                                  <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
-                                  <p class="item_title">숙소제목</p>
-                              </div>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-</div>
+	    <div class="container">
+	        <h2>추천숙소</h2>
+	        <ul class="recommend_list">
+	            <li>
+	                <a href='#'>
+	                    <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
+	                    <div class="item_info">
+	                        <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
+	                        <p class="item_title">숙소제목</p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href='#'>
+	                    <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
+	                    <div class="item_info">
+	                        <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
+	                        <p class="item_title">숙소제목</p>
+	                    </div>
+	                </a>
+	            </li>
+	            <li>
+	                <a href='#'>
+	                    <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
+	                    <div class="item_info">
+	                        <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
+	                        <p class="item_title">숙소제목</p>
+	                    </div>
+	                </a>
+	            </li> 
+	            <li>
+	                <a href='#'>
+	                    <div class="item_img" style="background-image : url('/semiProject/resources/images/ygh/item.jpg')"></div>
+	                    <div class="item_info">
+	                        <p class="item_name"><span class="item_location">동부</span> 숙소명</p>
+	                        <p class="item_title">숙소제목</p>
+	                    </div>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+</div> 
 <%@include file="/views/common/footer.jsp" %>
