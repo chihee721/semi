@@ -36,6 +36,7 @@ public class adminLoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("/views/admin/main.jsp").forward(request, response);
+		// response.sendRedirect(request.getContextPath());
 	}
 
 }
