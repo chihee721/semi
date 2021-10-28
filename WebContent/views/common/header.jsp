@@ -74,7 +74,7 @@ scope="application"/>
                     <!-- 호스트일 때-->
                     <ul class="userCon" id="hostUserCon">
                         <li><a href="#">로그아웃</a></li>
-						<li><a href="#">마이페이지</a></li>
+						<li><a href="${ contextPath }/host/mypage">마이페이지</a></li>
 						<li><a href="#">메신저</a></li>
 						<li><a href="#">신고게시판</a></li>
                     </ul>
