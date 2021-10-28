@@ -53,7 +53,7 @@ scope="application"/>
 							<a href="#">추천장소</a>
 						</li>
 						<li>
-							<a href="reservation_view.html">예약조회</a>
+							<a href="${ contextPath }/semiProject/reservation/checkView">예약조회</a>
 						</li>						
 					</ul>
 				</div>
