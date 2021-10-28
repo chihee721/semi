@@ -9,7 +9,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
-	<link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="${contextPath}/resources/images/favicon.png">
     <script src="${contextPath}/resources/js/jquery-1.11.2.min.js"></script>
     <script src="${contextPath}/resources/js/common.js"></script>    
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.easing.1.3.js"></script>
@@ -17,10 +17,11 @@
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/ui.js"></script>
-    <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/common.css">
-    <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/admin.css">
+    <link type="text/css" rel="stylesheet" href="${contextPath}/resources/css/common.css">
+    <link type="text/css" rel="stylesheet" href="${contextPath}/resources/css/admin.css">
     
     <script type="text/javascript" src="${contextPath}/resources/js/admin.js"></script>
+    
 </head>
 <body>	
 	<div id="wrap" class="wrap">
