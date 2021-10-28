@@ -6,6 +6,6 @@
 <%@ include file="/views/common/header.jsp" %>
 	<div id="imageArea2">
 		<img id="errorImage" src="<%= request.getContextPath() %>/resources/images/error2.png">
+		<h1 id="msgArea"><%= msg %></h1>
 	</div>
-	<h1 id="msgArea"><%= msg %></h1>
 <%@include file="/views/common/footer.jsp" %>
