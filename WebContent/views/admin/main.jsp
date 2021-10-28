@@ -23,30 +23,46 @@
     <script type="text/javascript" src="/semiProject/resources/js/admin.js"></script>
 </head>
 <body>	
-	<div id="adLogin">
-		<div class="adLogCon">
-			<div class="adTtl">
-				<img src="/semiProject/resources/images/logo.png" alt="logo">
-				<p class="title">관리자 페이지</p>
+	<div id="wrap" class="wrap">
+		<div class="lnb">
+			<h1 class="logo"><a href="admin_login.html"><img src="/semiProject/resources/images/logo.png" alt="logo"></a></h1>
+			<ul class="menuList">
+				<li>
+					<a href="#">회원 관리</a>
+					<ul class="subMenu">
+						<li><a href="admin_user_management01.html">회원 관리</a></li>
+						<li><a href="admin_user_management02.html">블랙리스트 관리</a></li>
+					</ul>
+				</li>
+				<li><a href="reservation_management.html">예약 관리</a></li>
+				<li>
+					<a href="#">후기 관리</a>
+					<ul class="subMenu">
+						<li><a href="review_management01.html">숙소 후기 관리</a></li>
+						<li><a href="review_management02.html">추천장소 후기 관리</a></li>
+					</ul>
+				</li>
+				<li><a href="inquire_management.html">문의 관리</a></li>
+				<li><a href="rooms_management.html">숙소 관리</a></li>
+				<li><a href="recPlace_management.html">추천장소 관리</a></li>
+			</ul>
+		</div>
+
+		<div class="conte_wrap">
+			<div class="gnb">
+				<div class="userArea">										
+                    <img src="/semiProject/resources/images/usericon.png" onclick="userCon()"/>
+                    <!-- 관리자일 떄 -->
+                    <ul class="userCon" id="adminUserCon">
+                        <li><a href="#">계정 관리</a></li>
+                        <li><a href="#">비밀번호 관리</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+				</div>
 			</div>
-			<div class="inputArea">
-				<form name="adloginForm" id="loginForm" method="post" action="<%= request.getContextPath() %>/admin/login">
-					<div class="inp_text">
-						<input type="text" name="usr_id" id="usr_id" maxlength="20" required="required" placeholder="아이디" />
-					</div>
-					<div class="inp_text">
-						<input type="password" name="psw" maxlength="20" autocomplete="off" required="required" placeholder="password" />
-					</div>
-					<div class="inp_check">
-						<input type="checkbox" name="id_save" id="id_save">
-						<label for="id_save">아이디 저장</label>
-					</div>
-					<div class="btn_wrap al_c">
-						<button class="btn btnType1 btnSizeL" type="submit" value="로그인"><span>로그인</span></button>
-						<!-- <a href="admin_main.html" class="btn btnType1 btnSizeL"><span>로그인</span></a> -->						
-					</div>
-				</form>
+			<div class="content">
 			</div>
+			<!-- //contet -->
 		</div>
 	</div>
 </body>
