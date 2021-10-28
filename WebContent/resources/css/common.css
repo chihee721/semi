@@ -519,3 +519,18 @@ body.ofH {overflow-y:hidden;min-width:1280px;}
      background-size: cover;
      background-repeat: no-repeat;
  }
+ 
+ 
+/* 에러 페이지 추가 */
+ #imageArea2 {
+	  width : 500px;
+	  margin : 100px auto;
+ }
+ 
+ #imageArea2 img {
+      width : 100%
+}
+
+ #msgArea {
+      text-align : center;
+}
