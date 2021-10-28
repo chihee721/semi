@@ -584,62 +584,57 @@
      color: #ff8b33;
      }
 
-     #inwon {
-     border: 1px solid gray;
-     /* display: inline-block; */
-     width: 30px;
-     margin-right: 5px;
-     text-align: center;
-     }
-
-     #lodgingName{
-     margin-left: 9px;
-     }
-
-     #lodging1{
+     .lodging1{
      width: 350px;
      height: 200px;
      }
 
-     #lodging_lineup{
+     .lodging_lineup{
      display: flex;
      align-items: flex-start;
      } 
 
 
-     #child1{
+     .child1{
      margin-top: 10px;
      flex: 1px;
      }
 
-     #child2{
+     .child2{
      flex: 2px;
      display: flex;
      flex-direction: column;
      }  
 
-     #text1{
+     .text1{
      /* margin-top: 50px;
      margin-left: 50px; */
      font-weight : bold;
      font-size: 20px;  
      }
 
-     #text2{
+     .text2{
      /* margin-top: 50px;
      margin-left: 50px; */
      font-weight : bold;
      font-size: 15px;  
      }
 
-     #text3{
+     .text3{
      font-size: 15px;
      font-weight: bold;
      }
 
-     #tt{
-     display: flex;
-     }
+    .tt{
+   	 display: flex;
+	}
+
+	.tt2{
+	   margin-left: 280px;
+	   margin-top: 25px;
+	   font-size: 15px;
+	   font-weight: bold;
+	}
 
      /*detail page*/
 
@@ -796,6 +791,7 @@
 
      .lodging_detail .hostBox{
      display: flex;
+     margin-top: 55px;
      }
 
      .lodging_detail .profile{
@@ -814,7 +810,8 @@
      }
 
      .lodging_detail .review{
-     margin-top: 50px;
+     margin-top: 80px;
+     
      }
 
      .lodging_detail .userSize{
@@ -851,6 +848,7 @@
      .lodging_detail .reviewSort{
      display: flex;
      justify-content: space-between;
+     margin-bottom: 85px;
      }
 
      .lodging_detail .reviewSort li {
@@ -944,6 +942,7 @@
      #filterSearch .profileSort{
      margin-bottom: 15px;
      }
+     
 /* 온화님 : E */
 
 /* 나현님 : S */
