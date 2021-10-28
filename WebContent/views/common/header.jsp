@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
 	<title>제주라도 넘어갈까</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +19,6 @@
     <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/common.css">
     <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/main.css">
     <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/contents.css">
-
     <script type="text/javascript" src="/semiProject/resources/js/contents.js"></script>
 </head>
 <body>
