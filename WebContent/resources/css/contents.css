@@ -1104,13 +1104,16 @@
      .roomlist_content tbody{ justify-content: center;}
      .roomlist_status { color: #0e7539; font-weight: 700; }
      .roomlist_btn {display: flex; justify-content: space-around;}
-
+	 
      /* 삭제 버튼 - 색 빨간색 변경 */
      .btnType3 {color:#d10000;border:1px solid #d10000;}
      .btnType3:before {background-color:#d10000;}
      .btnType3:focus,
      .btnType3:hover,
      .btnType3.active {color:#ffffff;border-color:#d10000;}
+     
+     /* 추가버튼에 관한 css 속성 */
+	 .addroombtn { display: flex; justify-content: right;}
 /* 나현님 : E */
 
 /* 지희님 : S */
@@ -1539,3 +1542,20 @@
           color: white;
      }
 /* 지희님 : E*/
+
+/* 에러 페이지 추가 */
+	 #imageArea2 {
+		  width : 500px;
+		  margin : 100px auto;
+		  display : flex;
+		  justify-content : center;
+		  align-item : center;
+	 }
+	 
+	 #imageArea2 img {
+	      width : 100%
+	}
+	
+	 #msgArea {
+	      text-align : center;
+	}
