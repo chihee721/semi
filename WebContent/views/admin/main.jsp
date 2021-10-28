@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -23,6 +23,8 @@
     <script type="text/javascript" src="${contextPath}/resources/js/admin.js"></script>
     
 </head>
+<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }"
+scope="application"/>
 <body>	
 	<div id="wrap" class="wrap">
 		<div class="lnb">
