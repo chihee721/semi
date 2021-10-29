@@ -40,7 +40,7 @@ scope="application"/>
 		<header id="header">
 			<div class="inner">					
 				<div class="logo">
-					<a href="#">
+					<a href="${ contextPath }">
 						<img src="/semiProject/resources/images/logo.png" alt="" />
 					</a>
 				</div>
@@ -53,7 +53,7 @@ scope="application"/>
 							<a href="#">추천장소</a>
 						</li>
 						<li>
-							<a href="${ contextPath }/semiProject/reservation/checkView">예약조회</a>
+							<a href="${ contextPath }/reservation/checkView">예약조회</a>
 						</li>						
 					</ul>
 				</div>

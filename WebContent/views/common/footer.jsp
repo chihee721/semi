@@ -17,7 +17,7 @@
 							<a href="#">개인정보처리방침</a>
 						</span>
 						<span>
-							<a href="${ contextPath }/semiProject/admin/login">관리자</a>
+							<a href="${ contextPath }/admin/login">관리자</a>
 						</span>
 					</div>
 				</div>
