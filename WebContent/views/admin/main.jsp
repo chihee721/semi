@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,25 +9,28 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
-	<link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.png">
-    <script src="${contextPath}/semiProject/resources/js/jquery-1.11.2.min.js"></script>
-    <script src="${contextPath}/semiProject/resources/js/common.js"></script>    
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/imagesloaded.pkgd.js"></script>
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/jquery.mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/ui.js"></script>
-    <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/common.css">
-    <link type="text/css" rel="stylesheet" href="/semiProject/resources/css/admin.css">
+	<link rel="shortcut icon" type="image/x-icon" href="${contextPath}/resources/images/favicon.png">
+    <script src="${contextPath}/resources/js/jquery-1.11.2.min.js"></script>
+    <script src="${contextPath}/resources/js/common.js"></script>    
+    <script type="text/javascript" src="${contextPath}/resources/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="${contextPath}/resources/css/common.css">
+    <link type="text/css" rel="stylesheet" href="${contextPath}/resources/css/admin.css">
     
-    <script type="text/javascript" src="${contextPath}/semiProject/resources/js/admin.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/admin.js"></script>
+    
 </head>
+<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }"
+scope="application"/>
 <body>	
 	<div id="wrap" class="wrap">
 		<div class="lnb">
 			<h1 class="logo">
 				<!-- <a href="admin_login.html"> -->
-					<img src="${contextPath}/semiProject/resources/images/logo.png" alt="logo">
+					<img src="${contextPath}/resources/images/logo.png" alt="logo">
 					<!-- </a> -->
 				
 			</h1>
@@ -56,7 +59,7 @@
 		<div class="conte_wrap">
 			<div class="gnb">
 				<div class="userArea">										
-                    <img src="${contextPath}/semiProject/resources/images/usericon.png" onclick="userCon()"/>
+                    <img src="${contextPath}/resources/images/usericon.png" onclick="userCon()"/>
                     <!-- 관리자일 떄 -->
                     <ul class="userCon" id="adminUserCon">
                         <li><a href="#">계정 관리</a></li>

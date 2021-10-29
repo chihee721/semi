@@ -1542,20 +1542,3 @@
           color: white;
      }
 /* 지희님 : E*/
-
-/* 에러 페이지 추가 */
-	 #imageArea2 {
-		  width : 500px;
-		  margin : 100px auto;
-		  display : flex;
-		  justify-content : center;
-		  align-item : center;
-	 }
-	 
-	 #imageArea2 img {
-	      width : 100%
-	}
-	
-	 #msgArea {
-	      text-align : center;
-	}
