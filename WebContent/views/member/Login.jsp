@@ -8,7 +8,7 @@
         <div class="input_area"><input type="text" name="userId" id="userId" placeholder="아이디를 입력하세요" required/></div><br>
         <div class="loginArea">비밀번호</div>
         <div class="input_area"><input type="password" name="userPwd" id="userPwd" placeholder="비밀번호를 입력하세요" required /></div><br>
-		<button type="submit" class="btn btnType1 btnSizeL" id="btnLogin"  onclick="login()"><span>로그인</span></button>
+		<button type="submit" class="btn btnType1 btnSizeL" id="btnLogin"><span>로그인</span></button>
 		<div class="find">
 			<button onclick="showLayer('findId');" type="button"><span class="find_id"> 아이디 찾기 / </span></button>
 			<button onclick="showLayer('findPwd');" type="button"><span class="find_pwd">비밀번호 찾기</span></button> 

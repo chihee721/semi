@@ -85,20 +85,17 @@ function join(){
 
 }
 /* login */
-function login() {
-    let id = document.getElementById('userId');
-    let pwd = document.getElementById('userPwd');
-
-    if(id.value != null || pwd.value != null){
-        return false;
-    } else {
-    	return true;   
-    }
-    
-//    else if(id.value !='user01'){	//DB에 존재하는 회원 아니면
-//    	alert('존재하지 않는 회원입니다.');
+//function login() {
+//    let id = document.getElementById('userId');
+//    let pwd = document.getElementById('userPwd');
+//
+//    if(id.value != null || pwd.value != null){
+//        return false;
+//    } else {
+//    	return true;   
 //    }
-}
+//
+//}
 
 function findResult(){
     let name = document.getElementById('id_name').value;
