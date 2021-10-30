@@ -7,7 +7,7 @@ function gest(){
     count++;
     
     if(count % 2 == 1) {
-        document.getElementById('gestGray').style.content = "url(../resources/images/join/user_orange.png)"
+        document.getElementById('gestGray').style.content = "url(/resources/images/join/user_orange.png)"
         document.getElementById('memberG').style.color = "#ff8b33";
     }
     else {
@@ -89,13 +89,15 @@ function login() {
     let id = document.getElementById('userId');
     let pwd = document.getElementById('userPwd');
 
-    if(id.value != 'user01' || pwd.value != '1234'){
-        alert("존재하지 않는 회원입니다.");
+    if(id.value != null || pwd.value != null){
         return false;
     } else {
-        // 페이지 이동
-        
+    	return true;   
     }
+    
+//    else if(id.value !='user01'){	//DB에 존재하는 회원 아니면
+//    	alert('존재하지 않는 회원입니다.');
+//    }
 }
 
 function findResult(){
