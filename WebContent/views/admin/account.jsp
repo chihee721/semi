@@ -69,6 +69,55 @@ scope="application"/>
 				</div>
 			</div>
 			<div class="content">
+                <div class="adinfoForm">
+                    <div class="listTit al_c">계정 관리</div>
+                    <dl>
+                        <dt>이름</dt>
+                        <dd>
+                            <div class="inp_text">
+                                <input type="text" name="" id="" value="관리자"/>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>
+                            <div class="inp_text">
+                                <input type="text" name="" id="" class="readOnly" readonly value="admin@gmail.com" />
+                            </div>
+                            <a href="#" class="btn btnType1 btnSizeS"><span>재설정</span></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <div class="inp_text">
+                                <input type="text" name="" id="" class="readOnly" readonly value="admin" />
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>전화번호</dt>
+                        <dd>
+                            <div class="inp_text">
+                                <input type="text" name="" id="" value="010-9999-8888"/>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <div class="inp_text">
+                                <input type="password" name="" id="" class="readOnly" readonly value="password" />
+                            </div>
+                            <a href="#" class="btn btnType1 btnSizeS"><span>재설정</span></a>
+                        </dd>
+                    </dl>
+                    <div class="btn_wrap al_c">
+                        <a href="#" class="btn btnType1 btnSizeM"><span>저장</span></a>
+                        <a href="#" class="btn btnType2 btnSizeM"><span>취소</span></a>
+                    </div>
+                </div>
 			</div>
 			<!-- //contet -->
 		</div>

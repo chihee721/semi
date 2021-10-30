@@ -65,21 +65,21 @@ scope="application"/>
 				<div class="userArea" style="display: none">										
                     <img src="/semiProject/resources/images/usericon.png" onclick="userCon()"/>                   
                     <!-- 회원일 때 -->
-                    <ul class="userCon" id="guestUserCon">
+                    <ul class="userCon" id="guestUserCon" style="display: none">
                         <li><a href="#">로그아웃</a></li>
 						<li><a href="#">마이페이지</a></li>
 						<li><a href="#">메신저</a></li>
 						<li><a href="#">신고게시판</a></li>
                     </ul>
                     <!-- 호스트일 때-->
-                    <ul class="userCon" id="hostUserCon">
+                    <ul class="userCon" id="hostUserCon" style="display: none">
                         <li><a href="#">로그아웃</a></li>
 						<li><a href="${ contextPath }/host/mypage">마이페이지</a></li>
 						<li><a href="#">메신저</a></li>
 						<li><a href="#">신고게시판</a></li>
                     </ul>
                     <!-- 관리자일 떄 -->
-                    <ul class="userCon" id="adminUserCon">
+                    <ul class="userCon" id="adminUserCon" style="display: none">
                         <li><a href="#">계정 관리</a></li>
                         <li><a href="#">비밀번호 관리</a></li>
                         <li><a href="#">로그아웃</a></li>

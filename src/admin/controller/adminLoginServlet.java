@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import member.model.service.MemberService;
+import member.model.vo.Member;
+
 
 /**
  * Servlet implementation class adminLoginServlet
@@ -39,9 +42,8 @@ public class adminLoginServlet extends HttpServlet {
 		String adUserId = request.getParameter("adUserId");
 		String adUserPwd = request.getParameter("adUserPwd");
 		int a = 0;
-		// 2. 비즈니스 로직 처리하는 서비스 클래스의 해당 메소드를 실행 후 처리 결과를 리턴 받음
-		// id, pwd를 가지고 DB에 접근해서 일치하는 member가 있을 경우 member 객체를 리턴
-		// Member loginUser = new MemberService().loginMember(userId, userPwd);
+		
+		// Member loginUser = new MemberService().loginMember(adUserId, adUserPwd);
 		
 		if(a == 0) {
 			
