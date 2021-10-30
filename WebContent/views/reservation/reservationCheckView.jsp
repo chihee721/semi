@@ -14,7 +14,7 @@
 					<p>예약날짜 : 2021.01.01 ~ 2021.01.02</p>
 					<p>숙박인원 : 4명</p>
 					<div class="btn_wrap">
-						<a href="payment.html" class="btn btnType1 btnSizeS"><span>결제하기</span></a>
+						<a href="${contextPath}/payment" class="btn btnType1 btnSizeS"><span>결제하기</span></a>
 						<a href="#" class="btn btnType2 btnSizeS"><span>예약취소</span></a>
 					</div>
 				</div>
