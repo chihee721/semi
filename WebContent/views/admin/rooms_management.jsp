@@ -325,8 +325,8 @@ scope="application"/>
 							<th>반려/중지<br>이유</th>
 							<td>
                                 <div class="textbox">
-                                    <textarea>안녕하세요. 해당 숙소는 반려되었습니다. 사유는 다음과 같습니다.</textarea>
-                                    <span class="charCnt"><em>0</em>/200</span>
+                                    <textarea class="chatArea">안녕하세요. 해당 숙소는 반려되었습니다. 사유는 다음과 같습니다.</textarea>
+                                    <span class="charCnt"><em class="update">0</em>/200</span>
                                 </div>
                             </td>
 						</tr>
@@ -335,9 +335,19 @@ scope="application"/>
 			</div>			
 			<div class="btn_wrap">
                 <a href="#" class="btn btnType1 btnSizeM"><span>적용</span></a>
-				<a href="#" class="btn btnType2 btnSizeM"><span>취소</span></a>
+				<a href="#none" class="btn btnType2 btnSizeM" onclick="hideLayer('roomsPop');"><span>취소</span></a>
             </div>
 		</div> 
 	</div>
+	
+    <script>
+    	let content = document.querySelector(".chatArea");
+        content.onkeyup = function(){
+            let area1 = document.querySelector(".update ");
+            let val = content.value.length;
+            console.log(val);
+            area1.innerHTML = val;
+        };
+    </script>
 </body>
 </html>
