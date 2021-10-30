@@ -168,7 +168,7 @@ scope="application"/>
 							<tr>
 								<td>190</td>
 								<td>식당</td>
-								<td><a class="active" href="recPlace_modify_management.html">식당이름이요</a></td>
+								<td><a class="active" href="${contextPath }/admin/recPlace_mod">식당이름이요</a></td>
 								<td>#맛집 #분위기 #가성비 #갓성비</td>
 								<td>45</td>
 								<td>4.6</td>
@@ -180,7 +180,7 @@ scope="application"/>
                                         <label for="chk1_2"></label>
                                     </span>
                                 </td>
-							</tr></a>
+							</tr>
 							<tr>
 								<td>190</td>
 								<td>식당</td>
@@ -329,7 +329,7 @@ scope="application"/>
 					</table>
 				</div>
                 <div class="btn_wrap recPlace">
-                    <a href="recPlace_add_management.html" class="btn btnType1 btnSizeS"><span>추가</span></a>
+                    <a href="${contextPath }/admin/recPlace_add" class="btn btnType1 btnSizeS"><span>추가</span></a>
                     <a href="#" class="btn btnType2 btnSizeS"><span>삭제</span></a>
                 </div>
 				<div class="paging">
