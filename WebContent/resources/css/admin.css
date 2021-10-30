@@ -9,6 +9,7 @@
 .lnb .menuList {border-right: 1px solid #eee; height: calc(100% - 81px); text-align: center;}
 .lnb .menuList > li > a{position:relative;display: block;height: 60px;line-height: 60px;font-size:18px;font-weight: 700;}
 .lnb .subMenu {display:none;}
+.lnb .active + .subMenu {display:block;}
 .lnb .subMenu a{display:block;padding:10px 15px}
 .lnb a:hover,
 .lnb a.active{color:#FF8B33;}
